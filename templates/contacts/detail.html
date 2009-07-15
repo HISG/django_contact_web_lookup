@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block page_title %}Login{% endblock page_title %}
+
+{% block body %}
+
+<h1>{{ contactDetails.name }}
+</h1>
+<div class="content">
+<p><a href="/contacts/search">Back to Search</a></p>
+<p class="meta">Last updated {{ contactDetails.updated_on }} by {{ contactDetails.updated_by_screenname }}.</p>
+
+<h2>Phone</h2>
+<ul>
+{% for p in contactInfo.phone %}
+<li><a href="tel:{{p.phone}}">{{p.phone}}</a> ({{p.description}})</li>
+{% endfor %}
+</ul>
+
+<h2>Email</h2>
+<ul>
+{% for e in contactInfo.email %}
+<li><a href="mailto:{{e.email}}">{{e.email}}</a> ({{e.description}})</li>
+{% endfor %}
+</ul>
+
+<h2>Address</h2>
+<ul>
+{% for a in contactInfo.address %}
+<li>{{a.address}} ({{a.description}})</li>
+{% endfor %}
+</ul>
+
+<h2>IM</h2>
+<ul>
+{% for i in contactInfo.im %}
+<li>{{i.name}} ({{i.description}})</li>
+{% endfor %}
+</ul>
+
+</div>
+{% endblock body %}

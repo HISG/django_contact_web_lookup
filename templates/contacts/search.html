@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block page_title %}Login{% endblock page_title %}
+
+{% block body %}
+
+<h1>Contact Search</h1>
+<div class="content">
+
+    <form action="/contacts/search" method="POST">
+        <div class="fieldWrapper">
+            {{ form.search_term.errors }}
+            <label for="id_search_term">Search:</label>
+            {{ form.search_term }}
+        </div>
+        <p><input type="submit" value="Search" /></p>
+    </form>
+
+<script type="text/javascript">
+document.getElementById('id_search_term').focus()
+</script>
+</div>
+{% endblock body %}

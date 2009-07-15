@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block page_title %}Login{% endblock page_title %}
+
+{% block body %}
+
+<h1>Contact Search Results</h1>
+<p>You searched for: {{ search_term }}</p>
+<!-- # [{u'type': u'contact', u'id': 000, u'name': u'Contact Name'}, ... ] -->
+<ul class="searchResultList">
+{% for r in results %}
+
+<li><a href="/contacts/detail/{{ r.id }}">{{ r.name }}</a></li>
+
+{% endfor %}
+</ul>
+</div>
+{% endblock body %}

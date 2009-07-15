@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block page_title %}Login{% endblock page_title %}
+
+{% block body %}
+
+<p>{% trans "Thanks for spending some quality time with the Web site today." %}</p>
+
+<p><a href="{{ login_link }}">{% trans 'Log in again' %}</a></p>
+
+{% endblock %}
