@@ -4,19 +4,56 @@ body {
 }
 
 h1 {
-   color: #ccf;
-   background: #69f;
+   color: #fff;
+   background: #36c;
    font-size: 24px;
    margin: 0px 0px 10px 0px;
    padding: 4px 10px 4px 6px;
    border-bottom: 1px solid #666;
 }
 
-h3 {
-   color: #69f;
+.toptitle {
+   color: #36c;
    background: #9cf;
    font-size: 12px;
    margin: 0px 0px 0px 0px;
-   padding: 4px 4px 4px 3px;
+   padding: 4px 4px 4px 6px;
    border-bottom: 1px solid #666;
+}
+
+.logout {
+   float: right;
+   padding: 4px 4px 4px 6px;
+   font-size: 12px;
+}
+
+h2 {
+   color: #36c;
+   background: #ccc;
+   font-size: 18px;
+   margin: 0px 0px 0px 0px;
+   padding: 4px 4px 4px 6px;
+   border: 1px solid #666;
+}
+
+.content {
+   padding: 0px 6px 4px 6px;
+}
+
+.meta {
+   font-size: 12px;
+   font-style: italic;
+}
+
+ul {
+   font-size: 16px;
+   list-style: none;
+   padding-left: 1em;
+	text-indent: -1em;
+	margin: 8px 0px 8px 0px;
+}
+
+li {
+	margin: 4px 0px 4px 15px;
+	padding: 0px 0px 0px 0px;
 }

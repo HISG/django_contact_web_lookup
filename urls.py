@@ -8,11 +8,7 @@ import settings
 urlpatterns = patterns('',
    (r'^user/', include('dfs_contact_web_lookup.tiq_login.urls')),
    (r'^contacts/', include('dfs_contact_web_lookup.contacts.urls')),
+   (r'^site_media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': '/Users/mlmiller/django-projects/dfs_contact_web_lookup/site_media/'}),
    (r'', 'tiq_login.views.login'),
 )
 
-
-if settings.DEBUG:
-    urlpatterns += patterns('',
-      (r'^site_media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': '/Users/mlmiller/django-projects/dfs_contact_web_lookup/site_media/'}),
-    )

@@ -78,6 +78,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.sites',
     'dfs_contact_web_lookup.tiq_login',
+    'dfs_contact_web_lookup.contacts',
 )
 
 

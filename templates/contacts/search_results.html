@@ -6,7 +6,10 @@
 {% block body %}
 
 <h1>Contact Search Results</h1>
-<p>You searched for: {{ search_term }}</p>
+<div class="content">
+<p><a href="/contacts/search">Back to Search</a></p>
+<p>You searched for:</p>
+<h2>{{ search_term }}</h2>
 <!-- # [{u'type': u'contact', u'id': 000, u'name': u'Contact Name'}, ... ] -->
 <ul class="searchResultList">
 {% for r in results %}

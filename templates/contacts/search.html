@@ -17,6 +17,20 @@
         <p><input type="submit" value="Search" /></p>
     </form>
 
+<h2>Recently Viewed</h2>
+<ul class="searchResultList">
+{% for r in recent %}
+<li><a href="/contacts/detail/{{ r.contact_id }}">{{ r.contact_name }}</a></li>
+{% endfor %}
+</ul>
+
+<h2>Most Viewed</h2>
+<ul class="searchResultList">
+{% for f in favorite %}
+<li><a href="/contacts/detail/{{ f.contact_id }}">{{ f.contact_name }}</a></li>
+{% endfor %}
+</ul>
+
 <script type="text/javascript">
 document.getElementById('id_search_term').focus()
 </script>

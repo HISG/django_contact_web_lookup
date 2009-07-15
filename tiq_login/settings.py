@@ -17,7 +17,7 @@ TIQ_LOGIN_TEMPLATE_PASSWORD_CHANGE_DONE = TIQ_LOGIN_TEMPLATE_DIR + 'password_cha
 REDIRECT_FIELD_NAME = 'next'
 
 # The page to redirect to after a successful login or password change.
-LOGIN_REDIRECT_URL = '/contacts'
+LOGIN_REDIRECT_URL = '/contacts/'
 
 # The url where the login view is displayed
 LOGIN_URL = '/user/login'
