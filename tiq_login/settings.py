@@ -23,5 +23,5 @@ LOGIN_REDIRECT_URL = '/contacts/'
 LOGIN_URL = '/user/login'
 
 # The Hostname and Path of the SessionRPC Server
-TIQ_SERVER = 'mmiller.vv' # hostname
+TIQ_SERVER = 'dfs.hisg-it.net' # hostname
 TIQ_URL = '/.dfs' # path

@@ -46,8 +46,6 @@ def detail(request, contact_id=None):
    contactDetails = sessionRpc.execute('addressBook.getContactDetails', {'id': contact_id})
    contactInfo = sessionRpc.execute('query.getContactInfo', {'id': contact_id})
 
-   print contactDetails
-
    try:
        cc = CachedContacts.objects.get(contact_id=contact_id, user=request.user)
        cc.viewed = cc.viewed + 1

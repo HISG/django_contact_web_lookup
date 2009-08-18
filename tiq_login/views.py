@@ -112,7 +112,6 @@ def password_change(request, template_name=TIQ_LOGIN_TEMPLATE_PASSWORD_CHANGE,
           except Exception, e:
              form = PasswordChangeForm()
              login_error = "Your username and old password are incorrect."
-             print str(form.errors) + "<- ***"
           else:
              # not catching errors here, assuming that if the password change succeeded that this will too
              from django.contrib.auth import authenticate, login

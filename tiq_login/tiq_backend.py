@@ -18,7 +18,6 @@ class TiqLoginBackend:
          return None
 
       if (loginResult['login'] != 'success'):
-         print "bad login"
          return None
          
       try:
@@ -38,7 +37,6 @@ class TiqLoginBackend:
          profile = user.get_profile()
          
       profile.session_id = sessionRpcClient.sessionId
-      print sessionRpcClient.sessionId
       profile.save()
 
       return user
